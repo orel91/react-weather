@@ -7,6 +7,13 @@ const Weather = require("Weather");
 const About = require("About");
 const Examples = require("Examples");
 
+// Load foundation
+require("style!css!foundation-sites/dist/foundation.min.css");
+//style! => Load the style in the browser by injecting it in a <style> tag
+//css! => Tell webpack this is a stylesheet
+
+$(document).foundation();
+
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
