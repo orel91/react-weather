@@ -26,6 +26,8 @@ var ErrorModal = React.createClass({
             </div>
         );
 
+        // Thirdparty libraries that manipulate the DOM don't work well with React.
+        // That's why we use this little trick to re-render the component when it's mounted.
         var $modal = $(ReactDOMServer.renderToString(modalMarkup));
         $(ReactDOM.findDOMNode(this)).html($modal);
 
