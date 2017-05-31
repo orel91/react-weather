@@ -15,8 +15,8 @@ var getTemp = location => {
             } else {
                 return res.data.main.temp;
             }
-        }, (res) => {
-            throw new Error(res.data.message);
+        }, (error) => {
+            throw new Error(error.response ? error.response.data.message : error.message);
         })
     ;
 };
