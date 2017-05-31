@@ -12,6 +12,9 @@ require("style!css!foundation-sites/dist/foundation.min.css");
 //style! => Load the style in the browser by injecting it in a <style> tag
 //css! => Tell webpack this is a stylesheet
 
+// App css
+require("style!css!applicationStyles");
+
 $(document).foundation();
 
 ReactDOM.render(

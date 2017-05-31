@@ -2,7 +2,7 @@ const React = require("react");
 
 var About = props => (
     <div>
-        <h1 className="text-center">About</h1>
+        <h1 className="text-center page-title">About</h1>
         <p>
             Weather app is an awesome app that allows you to search the
              weather for a given city.</p>
