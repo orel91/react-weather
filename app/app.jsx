@@ -13,7 +13,8 @@ require("style!css!foundation-sites/dist/foundation.min.css");
 //css! => Tell webpack this is a stylesheet
 
 // App css
-require("style!css!applicationStyles");
+require("style!css!sass!applicationStyles");
+//sass! => Loads the sass loader
 
 $(document).foundation();
 
